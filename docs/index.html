@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOTLIKESHOP MCP Server — connect your AI assistant | 17 tools, Streamable HTTP</title>
+<meta name="description" content="Public MCP server for HOTLIKESHOP. Search & buy MMO/social-media accounts, proxies and digital services from Claude, Cursor or ChatGPT. Free keyless lookup, safe two-step checkout. Endpoint: https://hotlikeshop.com/api/mcp">
+<link rel="canonical" href="https://hotlikeshop.com/ai">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HOTLIKESHOP MCP Server — 17 tools over Streamable HTTP">
+<meta property="og:description" content="Connect any MCP-capable AI assistant to HOTLIKESHOP and shop right inside the chat.">
+<meta property="og:url" content="https://tuanone123.github.io/hotlikeshop-mcp/">
+<meta property="og:image" content="https://hotlikeshop.com/assets/img/bannersite.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "HOTLIKESHOP MCP Server",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Any (Model Context Protocol client)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "url": "https://github.com/tuanone123/hotlikeshop-mcp",
+  "sameAs": [
+    "https://hotlikeshop.com/",
+    "https://hotlikeshop.com/ai",
+    "https://github.com/tuanone123/hotlikeshop-mcp"
+  ],
+  "description": "Public MCP server to search & buy MMO/social-media accounts, proxies and digital services from HOTLIKESHOP inside an AI assistant."
+}
+</script>
+<style>
+  :root{color-scheme:light dark}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1a1a2e;background:#f6f7fb}
+  @media(prefers-color-scheme:dark){body{background:#0f1020;color:#e8e8f0}}
+  .wrap{max-width:820px;margin:0 auto;padding:40px 20px}
+  h1{font-size:2rem;margin:.2em 0}
+  .sub{opacity:.8}
+  code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  pre{background:#11132a;color:#e8e8f0;padding:16px;border-radius:10px;overflow:auto}
+  .card{background:#fff;border:1px solid #e4e6f0;border-radius:12px;padding:20px;margin:16px 0}
+  @media(prefers-color-scheme:dark){.card{background:#181a33;border-color:#2a2c50}}
+  a.btn{display:inline-block;background:#ff2d55;color:#fff;text-decoration:none;padding:10px 18px;border-radius:8px;font-weight:600;margin:6px 8px 6px 0}
+  a{color:#ff2d55}
+  ul{padding-left:1.2em}
+  .grid{display:grid;grid-template-columns:1fr;gap:8px}
+  .pill{display:inline-block;background:#eef;border-radius:20px;padding:2px 10px;font-size:.85rem;margin:2px}
+  @media(prefers-color-scheme:dark){.pill{background:#22254a}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🔌 HOTLIKESHOP MCP Server</h1>
+  <p class="sub">Search &amp; buy MMO / social-media accounts, proxies and digital services from any AI assistant — right inside the chat.</p>
+  <p>
+    <span class="pill">Streamable HTTP</span>
+    <span class="pill">17 tools</span>
+    <span class="pill">No key for lookup</span>
+    <span class="pill">Claude · Cursor · ChatGPT</span>
+  </p>
+  <p>
+    <a class="btn" href="https://github.com/tuanone123/hotlikeshop-mcp">GitHub repo</a>
+    <a class="btn" href="https://hotlikeshop.com/ai">Docs &amp; config</a>
+    <a class="btn" href="https://hotlikeshop.com/">hotlikeshop.com</a>
+  </p>
+
+  <div class="card">
+    <h2>Connect in 30 seconds</h2>
+    <pre>{
+  "mcpServers": {
+    "hotlikeshop": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://hotlikeshop.com/api/mcp"]
+    }
+  }
+}</pre>
+    <p>Or test it directly:</p>
+    <pre>curl -X POST https://hotlikeshop.com/api/mcp \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json, text/event-stream" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'</pre>
+  </div>
+
+  <div class="card">
+    <h2>The 17 tools</h2>
+    <div class="grid">
+      <div><b>🔎 Lookup (free, no key):</b> search_products, get_product, list_categories, list_category_products, recommend_products, best_sellers, latest_products, compare_products, similar_products</div>
+      <div><b>🛒 Purchase (API key):</b> get_my_balance, quote_order, buy_product, check_order_status</div>
+      <div><b>🧰 MMO utilities (free):</b> check_live_facebook, check_health_bulk, deep_inspect, topup_guide</div>
+    </div>
+  </div>
+
+  <p class="sub">Operated by <a href="https://hotlikeshop.com/">HOTLIKESHOP</a> · Full docs at <a href="https://hotlikeshop.com/ai">hotlikeshop.com/ai</a> · <a href="https://hotlikeshop.com/llms.txt">llms.txt</a></p>
+</div>
+</body>
+</html>

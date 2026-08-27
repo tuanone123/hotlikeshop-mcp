@@ -79,6 +79,8 @@ curl -X POST https://hotlikeshop.com/api/mcp \
 
 > The endpoint accepts **POST only** (JSON-RPC 2.0 over Streamable HTTP). A `GET` returns 405 — that is expected.
 
+Prefer code? Copy-paste, dependency-free examples live in [`quickstart/`](./quickstart) (Node & Python). A live docs page is published at **[tuanone123.github.io/hotlikeshop-mcp](https://tuanone123.github.io/hotlikeshop-mcp/)**.
+
 ---
 
 ## The 17 tools
