@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hotlikeshop": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://hotlikeshop.com/api/mcp"]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hotlikeshop": {
+      "type": "http",
+      "url": "https://hotlikeshop.com/api/mcp"
+    }
+  }
+}

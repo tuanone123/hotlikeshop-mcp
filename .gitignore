@@ -1,0 +1,12 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# secrets — never commit tokens/keys
+*.env
+.env
+*.token
+secrets.*
