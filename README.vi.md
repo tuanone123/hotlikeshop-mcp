@@ -57,6 +57,29 @@ Vào **Settings → MCP → Add new server**, hoặc dán vào `.cursor/mcp.json
 </details>
 
 <details>
+<summary><b>Cline / Roo (VS Code)</b></summary>
+
+Mở **Cline → MCP Servers → Configure** (sửa `cline_mcp_settings.json`) rồi thêm khối `mcpServers` giống trên:
+
+```json
+{
+  "mcpServers": {
+    "hotlikeshop": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://hotlikeshop.com/api/mcp"]
+    }
+  }
+}
+```
+</details>
+
+<details>
+<summary><b>Windsurf</b></summary>
+
+Sửa `~/.codeium/windsurf/mcp_config.json`, dán khối `mcpServers` ở trên rồi tải lại.
+</details>
+
+<details>
 <summary><b>Remote gốc (client hỗ trợ Streamable HTTP trực tiếp)</b></summary>
 
 ```json
@@ -81,13 +104,16 @@ curl -X POST https://hotlikeshop.com/api/mcp \
 
 ---
 
-## 17 công cụ (tools)
+## 18 công cụ (tools)
 
-### 🔎 Tra cứu — công khai, miễn phí, không cần key (9)
+> 🌍 **Thân thiện khách quốc tế:** giá sản phẩm trả về **cả VND lẫn USD** (`price_usd`, tỷ giá động), `topup_guide` và `how_to_start` có **tiếng Anh** (`lang:"en"`), và có thể nạp bằng **USDT (TRC20/EVM)**.
+
+### 🔎 Tra cứu & hướng dẫn — công khai, miễn phí, không cần key (10)
 
 | Tool | Chức năng |
 |------|-----------|
-| `search_products` | Tìm sản phẩm công khai theo từ khóa; trả id, tên, giá (VND), tồn kho, danh mục, url. |
+| `how_to_start` | Hướng dẫn người mới: 4 bước tạo tài khoản, lấy API key, nạp tiền (USDT cho khách quốc tế) và mua. Tiếng Anh hoặc tiếng Việt (`lang`). |
+| `search_products` | Tìm sản phẩm công khai theo từ khóa; trả id, tên, giá (VND + USD), tồn kho, danh mục, url. |
 | `get_product` | Chi tiết đầy đủ 1 sản phẩm theo id (kèm mô tả). |
 | `list_categories` | Liệt kê danh mục công khai kèm số sản phẩm. |
 | `list_category_products` | Sản phẩm trong 1 danh mục theo `category_id`. |
