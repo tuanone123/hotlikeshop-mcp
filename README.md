@@ -57,6 +57,29 @@ Add it in **Settings → MCP → Add new server**, or drop the snippet into `.cu
 </details>
 
 <details>
+<summary><b>Cline / Roo (VS Code)</b></summary>
+
+Open **Cline → MCP Servers → Configure** (edits `cline_mcp_settings.json`) and add the same `mcpServers` entry:
+
+```json
+{
+  "mcpServers": {
+    "hotlikeshop": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://hotlikeshop.com/api/mcp"]
+    }
+  }
+}
+```
+</details>
+
+<details>
+<summary><b>Windsurf</b></summary>
+
+Edit `~/.codeium/windsurf/mcp_config.json` and paste the `mcpServers` snippet above, then reload.
+</details>
+
+<details>
 <summary><b>Native remote (clients that support Streamable HTTP directly)</b></summary>
 
 ```json
@@ -83,13 +106,16 @@ Prefer code? Copy-paste, dependency-free examples live in [`quickstart/`](./quic
 
 ---
 
-## The 17 tools
+## The 18 tools
 
-### 🔎 Lookup — public, free, no key (9)
+> 🌍 **International-friendly:** product prices are returned in **both VND and USD** (`price_usd`, live rate), `topup_guide` and `how_to_start` speak **English** (`lang:"en"`), and you can top up with **USDT (TRC20/EVM)** — no Vietnamese required.
+
+### 🔎 Lookup & onboarding — public, free, no key (10)
 
 | Tool | What it does |
 |------|--------------|
-| `search_products` | Search public products by keyword; returns id, name, price (VND), stock, category, url. |
+| `how_to_start` | New-user onboarding: 4 steps to create an account, get an API key, top up (USDT for international users) and buy. English or Vietnamese (`lang`). |
+| `search_products` | Search public products by keyword; returns id, name, price (VND + USD), stock, category, url. |
 | `get_product` | Full details of one product by id (including description). |
 | `list_categories` | All public categories with product counts. |
 | `list_category_products` | Products inside a category by `category_id`. |
