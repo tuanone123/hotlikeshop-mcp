@@ -6,8 +6,9 @@
 
 [![MCP](https://img.shields.io/badge/MCP-Streamable_HTTP-blue)](https://modelcontextprotocol.io)
 [![Endpoint](https://img.shields.io/badge/endpoint-live-brightgreen)](https://hotlikeshop.com/api/mcp)
-[![Tools](https://img.shields.io/badge/tools-17-orange)](https://hotlikeshop.com/ai)
+[![Tools](https://img.shields.io/badge/tools-19-orange)](https://hotlikeshop.com/ai)
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
+[![hotlikeshop-mcp MCP server](https://glama.ai/mcp/servers/tuanone123/hotlikeshop-mcp/badges/score.svg)](https://glama.ai/mcp/servers/tuanone123/hotlikeshop-mcp)
 [![Website](https://img.shields.io/badge/website-hotlikeshop.com-ff2d55)](https://hotlikeshop.com)
 
 🌐 **[English](./README.md)** · **[🇻🇳 Tiếng Việt](./README.vi.md)**
