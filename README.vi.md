@@ -13,6 +13,8 @@
 
 🌐 **[English](./README.md)** · **[🇻🇳 Tiếng Việt](./README.vi.md)**
 
+[![hotlikeshop-mcp MCP server](https://glama.ai/mcp/servers/tuanone123/hotlikeshop-mcp/badges/card.svg)](https://glama.ai/mcp/servers/tuanone123/hotlikeshop-mcp)
+
 </div>
 
 ---
